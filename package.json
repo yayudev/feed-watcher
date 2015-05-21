@@ -1,0 +1,28 @@
+{
+  "name": "rss-feed-watcher",
+  "version": "0.1.0",
+  "description": "A rss watcher for fast-streams",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "keywords": [
+    "rss",
+    "feed-watcher",
+    "rss-watcher"
+  ],
+  "author": "Arturo Coronel <aoitsu3@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^2.9.25",
+    "parse-rss": "^1.0.3"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "coffee-script": "^1.9.2",
+    "mocha": "^2.2.5"
+  }
+}
