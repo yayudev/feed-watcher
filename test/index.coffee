@@ -206,9 +206,9 @@ describe 'On new entry event', ->
       expect(entries[0]).to.have.property 'link'
       done()
 
-  it 'should return 10 items from feed', (done) ->
+  it 'should return 1 item from feed', (done) ->
     watcher.start()
     watcher.on 'new entries', (entries) ->
       watcher.stop()
-      expect(entries).to.have.length.above 8
+      expect(entries).to.have.length 1
       done()

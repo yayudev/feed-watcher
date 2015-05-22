@@ -1,8 +1,8 @@
 {
-  "name": "rss-feed-watcher",
+  "name": "feed-watcher",
   "version": "0.1.0",
   "description": "A rss watcher optimized for synchronous data handling",
-  "main": "lib/index.js",
+  "main": "./lib/index.js",
   "directories": {
     "test": "test"
   },
@@ -18,11 +18,11 @@
   "license": "MIT",
   "dependencies": {
     "bluebird": "^2.9.25",
-    "docco": "^0.7.0",
     "parse-rss": "^1.0.3"
   },
   "devDependencies": {
     "chai": "^2.3.0",
+    "docco": "^0.7.0",
     "chai-as-promised": "^5.0.0",
     "coffee-script": "^1.9.2",
     "mocha": "^2.2.5",
@@ -31,6 +31,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/datyayu/rss-feed-watcher.git"
+    "url": "https://github.com/datyayu/feed-watcher.git"
   }
 }

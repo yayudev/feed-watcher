@@ -64,7 +64,7 @@ class Watcher extends EventEmitter
     new Promise (resolve, reject) =>
       request @feedUrl
         .then (entries) =>
-          @lastEntryDate = entries[entries.length-1].pubDate/1000
+          @lastEntryDate = entries[0].pubDate/1000
           @timer = @watch()
           resolve entries
 

@@ -1,0 +1,9 @@
+# Generated files.
+node_modules
+docs
+*.log
+
+# Development files.
+src
+test
+
