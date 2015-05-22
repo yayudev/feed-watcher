@@ -59,4 +59,6 @@ Watcher exposes 3 events: 'new entries', 'stop' and 'error'.
 ```
 
 ## Tests
-Tests can be run using ```npm test```.
+Tests can be run using ```npm test```.*
+
+Note: tests still have some problems with chai's done() being called twice after first run, but they assert properly.
