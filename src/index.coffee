@@ -24,7 +24,7 @@ class Watcher extends EventEmitter
               if @lastEntryDate is null or @lastEntryDate < entry.pubDate/1000
                 newEntries.push entry
 
-            # Update if new entries
+            # Update if new entries.
             # It uses newEntries[0] as last entry because they are
             # ordered from newest to oldest.
             if newEntries.length > 0
