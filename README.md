@@ -15,7 +15,7 @@ A basic watcher can be created using:
       feed     = 'http://lorem-rss.herokuapp.com/feed?unit=second&interval=5',
       interval = 10 // seconds
 
-  // if not interval is passed, 60s would be setted as default interval.
+  // if not interval is passed, 60s would be set as default interval.
   var watcher = new Watcher(feed, interval)
 
   // Check for new entries every n seconds.
@@ -30,6 +30,9 @@ A basic watcher can be created using:
     .start()
     .then(function (entries) {
       console.log(entries)
+    })
+    .catch(function(error) {
+      console.error(error)
     })
 
   // Stop watching the feed.
@@ -50,13 +53,13 @@ Watcher exposes 3 events: 'new entries', 'stop' and 'error'.
     console.log(entries)
   })
 
-  // Emitted when watchet.stop() is called,
+  // Emitted when watcher.stop() is called,
   watcher.on('stop', function () {
     console.log('stopped')
   })
 
-  // Emitted when an error ocurred at checking feed.
-  watcher.on "error", function (error) {
+  // Emitted when an error happens while checking feed.
+  watcher.on('error', function (error) {
     console.error(error)
   })
 ```
