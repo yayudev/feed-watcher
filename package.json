@@ -1,6 +1,6 @@
 {
   "name": "feed-watcher",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A rss watcher optimized for synchronous data handling",
   "main": "./lib/index.js",
   "directories": {
@@ -17,14 +17,16 @@
   "author": "Arturo Coronel <aoitsu3@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "bluebird": "^2.9.25",
     "parse-rss": "^1.0.3"
   },
   "devDependencies": {
+    "babel": "^6.0.15",
+    "babel-core": "^6.1.2",
     "chai": "^2.3.0",
-    "docco": "^0.7.0",
     "chai-as-promised": "^5.0.0",
-    "coffee-script": "^1.9.2",
+    "docco": "^0.7.0",
+    "eslint": "^1.9.0",
+    "eslint-config-airbnb": "^0.1.0",
     "mocha": "^2.2.5",
     "sinon": "^1.14.1",
     "sinon-chai": "^2.7.0"

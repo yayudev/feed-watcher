@@ -4,19 +4,19 @@ init:
 	npm install
 
 docs:
-	docco src/*.coffee
+	docco src/*.js
 
 clean-docs:
 	rm -rf docs/
 
 clean: clean-docs
-	rm -rf lib/ test/*.js
+	rm -rf lib/
 
 build:
-	coffee -o lib/ -c src/
+	babel -o lib/index.js src/index.js
 
 test:
-	./node_modules/.bin/mocha --compilers coffee:coffee-script/register --reporter spec
+	./node_modules/.bin/mocha --require test/babelhook.js --reporter spec
 
 dist: clean init docs build test
 
