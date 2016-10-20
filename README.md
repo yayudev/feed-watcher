@@ -1,9 +1,9 @@
 # feed-watcher
 [![npm version](https://badge.fury.io/js/feed-watcher.svg)](http://badge.fury.io/js/feed-watcher) </br>
-feed-watcher is a rss watcher based on <a href="https://github.com/nikezono/node-rss-watcher" target="_blank">Nikenozo's rss-watcher</a> but optimized for synchronous data handling and storing with the results from the parse. Also it was rewritted for using promises as a response to not-event-based requests instead of callbacks for better code quality :)
+feed-watcher is a rss watcher based on <a href="https://github.com/nikezono/node-rss-watcher" target="_blank">Nikenozo's rss-watcher</a> but optimized for synchronous data handling and storing of the results from the parse. Also it was rewritted to use promises as on not-event-based requests instead of callbacks for better code quality :)
 
 ## Installation
-You can install rss-feed-watcher by using:
+You can install feed-watcher by using:
 ```
   npm install feed-watcher
 ```
